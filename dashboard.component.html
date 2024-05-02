@@ -1,0 +1,19 @@
+<div>
+    <h2>Read Business Central Data</h2>
+    <!-- Hardcoded Bsuiness Central API Endpoints for Testing Only -->
+    <div><button (click)="getResponse('https://api.businesscentral.dynamics.com/v2.0/0c73eef7-54f6-4721-8a85-ab2f14582ecc/sandboxdev/api/v2.0/companies')">View Company Info</button></div><br>
+    <div><button (click)="getResponse('https://api.businesscentral.dynamics.com/v2.0/0c73eef7-54f6-4721-8a85-ab2f14582ecc/SandboxDev/ODataV4/Company%28%27Vffice%27%29/Employees')">View All Employees</button></div><br>
+    <div><button (click)="getResponse('https://api.businesscentral.dynamics.com/v2.0/0c73eef7-54f6-4721-8a85-ab2f14582ecc/SandboxDev/ODataV4/Company%28%27Vffice%27%29/Job_List?$select=No,Description,Bill_to_Customer_No,Status,Person_Responsible,Search_Description,Project_Manager')">View Job List</button></div><br>
+    <div><button (click)="getResponse('https://api.businesscentral.dynamics.com/v2.0/0c73eef7-54f6-4721-8a85-ab2f14582ecc/SandboxDev/ODataV4/Company%28%27Vffice%27%29/Locations')">View Locations</button></div><br>
+    <div><button (click)="getResponse('https://api.businesscentral.dynamics.com/v2.0/0c73eef7-54f6-4721-8a85-ab2f14582ecc/SandboxDev/ODataV4/Company%28%27Vffice%27%29/Service_Costs')">View Service Costs</button></div><br>
+</div>
+
+<div>
+    <h2>Sign Out</h2>
+    <div><button (click)="logOut()"> User Sign Out</button>
+</div>
+
+<div *ngIf="responseMsg">
+    <pre>{{ responseMsg }}</pre>
+</div>
+  

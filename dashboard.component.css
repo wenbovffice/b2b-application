@@ -1,0 +1,44 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
+  
+  .logout-button {
+    background-color: #dc3545; /* Bootstrap danger color for the logout button */
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333; /* Darken logout button on hover */
+  }
+  
+  .response-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #e9ecef; /* Light gray border */
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace; /* Makes it easier to read <pre> tag */
+  }
+  
+  pre {
+    white-space: pre-wrap; /* Ensures the JSON response wraps */
+    word-wrap: break-word; /* Breaks the word to prevent horizontal scrolling */
+  }
+  
